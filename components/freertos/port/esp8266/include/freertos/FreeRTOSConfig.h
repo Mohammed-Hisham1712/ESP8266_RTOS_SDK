@@ -194,5 +194,7 @@ uint32_t esp_get_time(void);
 #define configENABLE_TASK_MODIFY_STACK_DEPTH 1
 #endif
 
+#define configSUPPORT_STATIC_ALLOCATION 1
+
 #endif /* FREERTOS_CONFIG_H */
 

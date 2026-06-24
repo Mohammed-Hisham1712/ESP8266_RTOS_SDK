@@ -1009,6 +1009,9 @@ typedef struct xSTATIC_TCB
 	#if( configNUM_THREAD_LOCAL_STORAGE_POINTERS > 0 )
 		void			*pvDummy15[ configNUM_THREAD_LOCAL_STORAGE_POINTERS ];
 	#endif
+	#if ( configTHREAD_LOCAL_STORAGE_DELETE_CALLBACKS )
+	void				*pvDummy22[configNUM_THREAD_LOCAL_STORAGE_POINTERS];
+	#endif
 	#if ( configGENERATE_RUN_TIME_STATS == 1 )
 		uint32_t		ulDummy16;
 	#endif
